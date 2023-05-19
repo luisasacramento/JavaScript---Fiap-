@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: blue;
+  font-size: 25px;
+}
+
+.banana {
+  background-color: blue;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Altera a cor de escura para clara</h2>
+<p>Essa opção permite de mudarmos de cor escura para clara</p>
+
+<button onclick="funcao_mudaCor()">Altera Cor</button>
+
+<script>
+function funcao_mudaCor() {
+   var element = document.body;//é o elemento que envolve o conteúdo do documento. Em documentos com conteúdo no <body>
+   element.classList.toggle("banana");// element.classList retorna o nome de uma classe do css
+                                      //habilitar ou desabilitar uma função do JavaScript 
+}
+</script>
+
+</body>
+</html>
